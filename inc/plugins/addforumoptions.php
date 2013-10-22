@@ -31,7 +31,7 @@ function addforumoptions_info()
 		"website"			=> "http://galaxiesrealm.com/index.php",
 		"author"			=> "Starpaul20",
 		"authorsite"		=> "http://galaxiesrealm.com/index.php",
-		"version"			=> "2.2.2",
+		"version"			=> "2.2.3",
 		"guid"				=> "c83be3129f4d2ee537f294ee24216495",
 		"compatibility"		=> "16*"
 	);
@@ -103,7 +103,7 @@ function addforumoptions_deactivate()
 function addforumoptions_forum($above)
 {
 	global $mybb, $lang, $form, $forum_data;
-	$lang->load("add_forum_options");
+	$lang->load("add_forum_options", true);
 
 	if($above['title'] == $lang->misc_options && $lang->misc_options)
 	{
