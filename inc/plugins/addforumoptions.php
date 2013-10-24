@@ -178,13 +178,14 @@ function addforumoptions_reputation()
 	global $db, $mybb, $lang, $templates, $theme, $headerinclude, $show_back;
 	$lang->load("add_forum_options");
 
-	if($mybb->input['pid'])
+	$pid = intval($mybb->input['pid']);
+	if($pid)
 	{
 		$query = $db->query("
 			SELECT f.allowpostreps
 			FROM ".TABLE_PREFIX."posts p
 			LEFT JOIN ".TABLE_PREFIX."forums f ON (f.fid=p.fid)
-			WHERE p.pid='{$mybb->input['pid']}'
+			WHERE p.pid='{$pid}'
 		");
 		$forum = $db->fetch_array($query);
 		if($forum['allowpostreps'] != 1)
