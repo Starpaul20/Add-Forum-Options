@@ -1,0 +1,32 @@
+2.2.3
+- Bug: Fixed language error for 1.6.11
+- Added missing intval sanitation
+
+2.2.2
+- Updated plugin with 1.6.5 plugin system updates
+
+2.2.1
+- Optimization and general plugin updating
+
+2.2
+- Removed all file edits 
+
+2.1
+- Updated all file edits with 1.6.1 fixes
+- Reduced number of file edits to one
+
+2.0.1
+- Bug: Fixed bug causing the four forum options check boxes field to appear in several other sections of the Admin CP
+
+2.0
+- Updated plugin to work with MyBB 1.6
+- Dropped MyBB 1.4 support
+- Added post reputation option
+- Reduced number of file edits to four
+- Bug: Fixed bug causing avatars and signatures to not display in PMs
+
+1.1
+- Updated all files edits with 1.4.12/1.4.13/1.4.14 fixes
+
+1.0
+- Initial release
