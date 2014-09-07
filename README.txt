@@ -1,6 +1,6 @@
 ## INFORMATION ##
 
-Add Forum Options (2.2.3) for MyBB 1.6
+Add Forum Options (1.0) for MyBB 1.8
 Created by: Starpaul20
 Copyright: ©2009
 License: GPL
@@ -14,6 +14,8 @@ Adds four additional forum options that allow you to:
 on a per forum basis. These options are located under 'Miscellaneous Options' when adding or editing a forum.
 
 This plugin offers full language support.
+
+The 'oldrelease' branch contains the 1.6 version of the plugin.
 
 
 ## INSTALLATION ##

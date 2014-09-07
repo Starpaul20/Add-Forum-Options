@@ -1,7 +1,7 @@
 <?php
 /**
  * Add Forum Options
- * Copyright 2010 Starpaul20
+ * Copyright 2009 Starpaul20
  */
 
 // Disallow direct access to this file for security reasons
@@ -31,9 +31,8 @@ function addforumoptions_info()
 		"website"			=> "http://galaxiesrealm.com/index.php",
 		"author"			=> "Starpaul20",
 		"authorsite"		=> "http://galaxiesrealm.com/index.php",
-		"version"			=> "2.2.3",
-		"guid"				=> "c83be3129f4d2ee537f294ee24216495",
-		"compatibility"		=> "16*"
+		"version"			=> "1.0",
+		"compatibility"		=> "18*"
 	);
 }
 
