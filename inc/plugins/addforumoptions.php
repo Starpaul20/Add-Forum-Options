@@ -25,9 +25,12 @@ $plugins->add_hook("admin_forum_management_add_commit", "addforumoptions_forum_c
 // The information that shows up on the plugin manager
 function addforumoptions_info()
 {
+	global $lang;
+	$lang->load("add_forum_options", true);
+
 	return array(
-		"name"				=> "Add Forum Options",
-		"description"		=> "Adds four additional forum options for control over avatar, signature, quick reply display and post reputation.",
+		"name"				=> $lang->addforumoptions_info_name,
+		"description"		=> $lang->addforumoptions_info_desc,
 		"website"			=> "http://galaxiesrealm.com/index.php",
 		"author"			=> "Starpaul20",
 		"authorsite"		=> "http://galaxiesrealm.com/index.php",
