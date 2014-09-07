@@ -3,35 +3,35 @@
 
 ## Version number reset for MyBB 1.8 ##
 
-2.2.3
+2.2.3 (October 24th, 2013)
 - Bug: Fixed language error for 1.6.11
 - Added missing intval sanitation
 
-2.2.2
+2.2.2 (November 26th, 2011)
 - Updated plugin with 1.6.5 plugin system updates
 
-2.2.1
+2.2.1 (September 27th, 2011)
 - Optimization and general plugin updating
 
-2.2
+2.2 (January 18th, 2011)
 - Removed all file edits 
 
-2.1
+2.1 (December 15th, 2010)
 - Updated all file edits with 1.6.1 fixes
 - Reduced number of file edits to one
 
-2.0.1
+2.0.1 (August 30th, 2010)
 - Bug: Fixed bug causing the four forum options check boxes field to appear in several other sections of the Admin CP
 
-2.0
+2.0 (August 17th, 2010)
 - Updated plugin to work with MyBB 1.6
 - Dropped MyBB 1.4 support
 - Added post reputation option
 - Reduced number of file edits to four
 - Bug: Fixed bug causing avatars and signatures to not display in PMs
 
-1.1
+1.1 (April 13th, 2010)
 - Updated all files edits with 1.4.12/1.4.13/1.4.14 fixes
 
-1.0
+1.0 (December 12th, 2009)
 - Initial release
