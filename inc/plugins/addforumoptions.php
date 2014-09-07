@@ -45,10 +45,10 @@ function addforumoptions_install()
 	global $db, $cache;
 	addforumoptions_uninstall();
 
-	$db->add_column("forums", "usequickreply", "int(1) NOT NULL default '1'");
-	$db->add_column("forums", "allowavatars", "int(1) NOT NULL default '1'");
-	$db->add_column("forums", "allowsignatures", "int(1) NOT NULL default '1'");
-	$db->add_column("forums", "allowpostreps", "int(1) NOT NULL default '1'");
+	$db->add_column("forums", "usequickreply", "tinyint(1) NOT NULL default '1'");
+	$db->add_column("forums", "allowavatars", "tinyint(1) NOT NULL default '1'");
+	$db->add_column("forums", "allowsignatures", "tinyint(1) NOT NULL default '1'");
+	$db->add_column("forums", "allowpostreps", "tinyint(1) NOT NULL default '1'");
 
 	$cache->update_forums();
 }
