@@ -193,8 +193,8 @@ function addforumoptions_reputation()
 		if($forum['allowpostreps'] != 1)
 		{
 			$message = $lang->post_add_disabled;
-			eval("\$error = \"".$templates->get("reputation_add_error")."\";");
-			output_page($error);
+			eval("\$error = \"".$templates->get("reputation_add_error", 1, 0)."\";");
+			echo $error;
 			exit;
 		}
 	}
