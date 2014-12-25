@@ -35,6 +35,7 @@ function addforumoptions_info()
 		"author"			=> "Starpaul20",
 		"authorsite"		=> "http://galaxiesrealm.com/index.php",
 		"version"			=> "1.0",
+		"codename"			=> "addforumoptions",
 		"compatibility"		=> "18*"
 	);
 }
