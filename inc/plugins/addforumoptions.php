@@ -143,10 +143,10 @@ function addforumoptions_forum_commit()
 {
 	global $db, $mybb, $cache, $fid;
 	$update_array = array(
-		"usequickreply" => (int)$mybb->input['usequickreply'],
-		"allowavatars" => (int)$mybb->input['allowavatars'],
-		"allowsignatures" => (int)$mybb->input['allowsignatures'],
-		"allowpostreps" => (int)$mybb->input['allowpostreps'],
+		"usequickreply" => $mybb->get_input('usequickreply', MyBB::INPUT_INT),
+		"allowavatars" => $mybb->get_input('allowavatars', MyBB::INPUT_INT),
+		"allowsignatures" => $mybb->get_input('allowsignatures', MyBB::INPUT_INT),
+		"allowpostreps" => $mybb->get_input('allowpostreps', MyBB::INPUT_INT),
 	);
 
 	$db->update_query("forums", $update_array, "fid='{$fid}'");
@@ -192,7 +192,7 @@ function addforumoptions_reputation()
 	global $db, $mybb, $lang, $templates, $theme, $headerinclude, $show_back;
 	$lang->load("add_forum_options");
 
-	$pid = (int)$mybb->input['pid'];
+	$pid = $mybb->get_input('pid', MyBB::INPUT_INT);
 	if($pid)
 	{
 		$query = $db->query("
