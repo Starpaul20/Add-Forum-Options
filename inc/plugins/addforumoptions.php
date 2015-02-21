@@ -160,17 +160,17 @@ function addforumoptions_post($post)
 	global $forum;
 	if($forum['allowsignatures'] != 1)
 	{
-		$post['signature'] = "";
+		$post['signature'] = '';
 	}
 
 	if($forum['allowavatars'] != 1)
 	{
-		$post['useravatar'] = "";
+		$post['useravatar'] = '';
 	}
 
 	if($forum['allowpostreps'] != 1)
 	{
-		$post['button_rep'] = "";
+		$post['button_rep'] = '';
 	}
 
 	return $post;
@@ -182,14 +182,14 @@ function addforumoptions_showthread()
 	global $forum, $quickreply;
 	if($forum['usequickreply'] != 1)
 	{
-		$quickreply = "";
+		$quickreply = '';
 	}
 }
 
 // Disallow post reputations
 function addforumoptions_reputation()
 {
-	global $db, $mybb, $lang, $templates, $theme, $headerinclude, $show_back;
+	global $db, $mybb, $lang, $templates, $theme;
 	$lang->load("add_forum_options");
 
 	$pid = $mybb->get_input('pid', MyBB::INPUT_INT);
@@ -202,6 +202,7 @@ function addforumoptions_reputation()
 			WHERE p.pid='{$pid}'
 		");
 		$forum = $db->fetch_array($query);
+
 		if($forum['allowpostreps'] != 1)
 		{
 			$message = $lang->post_add_disabled;
