@@ -46,10 +46,21 @@ function addforumoptions_install()
 	global $db, $cache;
 	addforumoptions_uninstall();
 
-	$db->add_column("forums", "usequickreply", "tinyint(1) NOT NULL default '1'");
-	$db->add_column("forums", "allowavatars", "tinyint(1) NOT NULL default '1'");
-	$db->add_column("forums", "allowsignatures", "tinyint(1) NOT NULL default '1'");
-	$db->add_column("forums", "allowpostreps", "tinyint(1) NOT NULL default '1'");
+	switch($db->type)
+	{
+		case "pgsql":
+			$db->add_column("forums", "usequickreply", "smallint NOT NULL default '1'");
+			$db->add_column("forums", "allowavatars", "smallint NOT NULL default '1'");
+			$db->add_column("forums", "allowsignatures", "smallint NOT NULL default '1'");
+			$db->add_column("forums", "allowpostreps", "smallint NOT NULL default '1'");
+			break;
+		default:
+			$db->add_column("forums", "usequickreply", "tinyint(1) NOT NULL default '1'");
+			$db->add_column("forums", "allowavatars", "tinyint(1) NOT NULL default '1'");
+			$db->add_column("forums", "allowsignatures", "tinyint(1) NOT NULL default '1'");
+			$db->add_column("forums", "allowpostreps", "tinyint(1) NOT NULL default '1'");
+			break;
+	}
 
 	$cache->update_forums();
 }
