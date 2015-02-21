@@ -1,3 +1,7 @@
+1.1 (February 21st, 2015)
+- Added PostgreSQL and SQLite support
+- Changed (int)$mybb->input to $mybb->get_input
+
 1.0 (September 7th, 2014)
 - Updated plugin to work with MyBB 1.8
 
