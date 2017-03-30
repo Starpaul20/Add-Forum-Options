@@ -13,4 +13,3 @@ $l['allow_signatures'] = "Yes, allow signatures to be shown";
 $l['allow_post_reps'] = "Yes, allow post reputations";
 
 $l['post_add_disabled'] = "Giving reputation to posts has been disabled in this forum.";
-?>

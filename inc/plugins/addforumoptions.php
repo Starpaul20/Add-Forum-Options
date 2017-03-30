@@ -212,5 +212,3 @@ function addforumoptions_reputation()
 		}
 	}
 }
-
-?>
