@@ -1,3 +1,6 @@
+1.2 (May 1st, 2024)
+- Fixed undefined error in Admin CP with PHP 8.2
+
 1.1.1 (June 22nd, 2021)
 - Removed PHP closing tags
 - Adding License file
