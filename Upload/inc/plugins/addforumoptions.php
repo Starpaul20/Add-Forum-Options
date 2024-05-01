@@ -119,7 +119,7 @@ function addforumoptions_forum($above)
 	global $mybb, $lang, $form, $forum_data;
 	$lang->load("add_forum_options", true);
 
-	if($above['title'] == $lang->misc_options && $lang->misc_options)
+	if(isset($lang->misc_options) && $above['title'] == $lang->misc_options)
 	{
 		$above['content'] .="<div class=\"forum_settings_bit\">".$form->generate_check_box('usequickreply', 1, $lang->use_quick_reply, array('checked' => $forum_data['usequickreply'], 'id' => 'usequickreply'))."</div>";
 		$above['content'] .="<div class=\"forum_settings_bit\">".$form->generate_check_box('allowavatars', 1, $lang->allow_avatars, array('checked' => $forum_data['allowavatars'], 'id' => 'allowavatars'))."</div>";
